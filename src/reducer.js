@@ -1,7 +1,7 @@
 const initialValue = []
 let lastId = 0;
 
-function reducer(state = initialValue, action) {
+export default function reducer(state = initialValue, action) {
     if (action.type === 'bugAdded') {
         return [
             ...state,
