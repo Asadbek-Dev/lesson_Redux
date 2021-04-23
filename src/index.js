@@ -1,7 +1,7 @@
 import { bugAdded, bugRemoved, bugResolved } from './actions'
 import store from './store'
 
-
+// redux toolkit
 
 const unsubscribe = store.subscribe(() => {
     console.log('store changed', store.getState())
