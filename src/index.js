@@ -1,5 +1,5 @@
-import { bugAdded, bugRemoved, bugResolved } from './actions'
-import store from './store'
+import { bugAdded, bugRemoved, bugResolved } from './bug'
+import store from './configureStore'
 
 // redux toolkit
 
