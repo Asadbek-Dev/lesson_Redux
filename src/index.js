@@ -10,11 +10,14 @@ const unsubscribe = store.subscribe(() => {
 
 console.log(store)
 
-store.dispatch(bugAdded('bug 1'))
-store.dispatch(bugAdded('bug 2'))
+store.dispatch(bugAdded({ description: 'bug 1 wsgakjgcsagjsdxs' }))
+store.dispatch(bugAdded({ description: 'bug 2' }))
+store.dispatch(bugAdded({ description: 'bug 3' }))
+store.dispatch(bugAdded({ description: 'bug 4' }))
 unsubscribe()
-store.dispatch(bugRemoved(1))
-store.dispatch(bugResolved(2))
+store.dispatch(bugRemoved({ id: 2 }))
+store.dispatch(bugResolved({ id: 3 }))
+store.dispatch(bugResolved({ id: 4 }))
 
 console.log(store.getState())
 
