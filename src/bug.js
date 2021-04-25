@@ -35,7 +35,7 @@ export const bugRemoved = createAction('bugRemoved')
 const initialValue = []
 let lastId = 0;
 
-export default createReducer([], {
+export default createReducer(initialValue, {
     bugAdded: (state, action) => [
         ...state,
         {
